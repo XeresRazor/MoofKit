@@ -12,6 +12,7 @@
 @interface MOOFDialogContainerView ()
 //@property (nonatomic, readonly) UIImage *frameImage; // This holds a resizeable image that we use to draw the view border, it's generated dynamically the first time we need it
 @property (nonatomic, strong) UIImageView *backgroundImageView;
+@property (nonatomic, readwrite) UIView *contentView;
 @end
 
 
@@ -25,10 +26,16 @@
     self = [super initWithFrame:frame];
     if (self) {
 		[self calculateContentSize];
+		
 		self.backgroundImageView = [[UIImageView alloc] initWithFrame:self.bounds];
 		self.backgroundImageView.image = [MOOFImageProvider resizeableDialogBorderImage];//self.frameImage;
 		self.backgroundImageView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
 		[self addSubview:self.backgroundImageView];
+		
+		self.contentView = [[UIView alloc] initWithFrame:CGRectMake(kDialogBorderLeftWidth, kDialogBorderTopWidth, self.contentSize.width, self.contentSize.height)];
+		self.contentView.backgroundColor = [UIColor whiteColor];
+		self.contentView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+		[self addSubview:self.contentView];
     }
     return self;
 }
@@ -47,7 +54,7 @@
 
 -(void)calculateContentSize {
 	// calculate the content size from the current frame
-	_contentSize = CGSizeMake(self.frame.size.width - kDialogBorderLeftWidth - kDialogBorderRightWidth, self.frame.size.height - kDialogBorderTopWidth - kDialogBorderBottomWidth);
+	_contentSize = CGSizeMake(self.bounds.size.width - kDialogBorderLeftWidth - kDialogBorderRightWidth, self.bounds.size.height - kDialogBorderTopWidth - kDialogBorderBottomWidth);
 }
 
 -(void)calculateFrame {
@@ -84,7 +91,7 @@
 
 -(void)layoutSubviews {
 	[super layoutSubviews];
-	
+	//self.contentView.frame = CGRectMake(kDialogBorderLeftWidth, kDialogBorderTopWidth, self.contentSize.width, self.contentSize.height);
 }
 
 @end

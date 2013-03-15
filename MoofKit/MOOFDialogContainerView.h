@@ -11,4 +11,5 @@
 @interface MOOFDialogContainerView : UIView
 @property (nonatomic) CGSize contentSize;
 @property (nonatomic) CGPoint origin;
+@property (nonatomic, readonly) UIView *contentView;
 @end

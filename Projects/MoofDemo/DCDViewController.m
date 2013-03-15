@@ -23,6 +23,11 @@
 	self.dialog = [[MOOFDialogContainerView alloc] initWithFrame:CGRectInset(self.view.bounds, 16.0, 16.0)];
 	[self.view addSubview:self.dialog];
 	[self.view setBackgroundColor:[MOOFImageProvider greyBackgroundPatternColor]];
+	UIImage *clarusImage = [MOOFImageProvider clarusImage];
+	UIImageView *clarusView = [[UIImageView alloc] initWithImage:clarusImage];
+	clarusView.frame = CGRectMake(8.0, 8.0, clarusImage.size.width, clarusImage.size.height);
+	clarusView.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+	[self.dialog.contentView addSubview:clarusView];
 	[self animateSubview];
 }
 
