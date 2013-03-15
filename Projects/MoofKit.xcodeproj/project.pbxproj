@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1938276C16F3A625007D7F7F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1938276B16F3A625007D7F7F /* UIKit.framework */; };
+		1938276D16F3A625007D7F7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DA85EB16F373B800227F4A /* Foundation.framework */; };
+		1938276F16F3A625007D7F7F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1938276E16F3A625007D7F7F /* CoreGraphics.framework */; };
+		1938277516F3A625007D7F7F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1938277316F3A625007D7F7F /* InfoPlist.strings */; };
+		1938277716F3A625007D7F7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1938277616F3A625007D7F7F /* main.m */; };
+		1938277B16F3A625007D7F7F /* DCDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1938277A16F3A625007D7F7F /* DCDAppDelegate.m */; };
+		1938277D16F3A625007D7F7F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1938277C16F3A625007D7F7F /* Default.png */; };
+		1938277F16F3A625007D7F7F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1938277E16F3A625007D7F7F /* Default@2x.png */; };
+		1938278116F3A625007D7F7F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1938278016F3A625007D7F7F /* Default-568h@2x.png */; };
+		1938278416F3A625007D7F7F /* DCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1938278316F3A625007D7F7F /* DCDViewController.m */; };
+		1938278716F3A625007D7F7F /* DCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1938278516F3A625007D7F7F /* DCDViewController.xib */; };
+		1938278D16F3A7AF007D7F7F /* MOOFDialogContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DA85FB16F3770900227F4A /* MOOFDialogContainerView.m */; };
+		19DA85EC16F373B800227F4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DA85EB16F373B800227F4A /* Foundation.framework */; };
+		19DA85FC16F3770900227F4A /* MOOFDialogContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DA85FB16F3770900227F4A /* MOOFDialogContainerView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		19DA85E616F373B800227F4A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1938276A16F3A625007D7F7F /* MoofDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoofDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1938276B16F3A625007D7F7F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1938276E16F3A625007D7F7F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1938277216F3A625007D7F7F /* MoofDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MoofDemo-Info.plist"; sourceTree = "<group>"; };
+		1938277416F3A625007D7F7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1938277616F3A625007D7F7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1938277816F3A625007D7F7F /* MoofDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoofDemo-Prefix.pch"; sourceTree = "<group>"; };
+		1938277916F3A625007D7F7F /* DCDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCDAppDelegate.h; sourceTree = "<group>"; };
+		1938277A16F3A625007D7F7F /* DCDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCDAppDelegate.m; sourceTree = "<group>"; };
+		1938277C16F3A625007D7F7F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1938277E16F3A625007D7F7F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1938278016F3A625007D7F7F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1938278216F3A625007D7F7F /* DCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCDViewController.h; sourceTree = "<group>"; };
+		1938278316F3A625007D7F7F /* DCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCDViewController.m; sourceTree = "<group>"; };
+		1938278616F3A625007D7F7F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DCDViewController.xib; sourceTree = "<group>"; };
+		19DA85E816F373B800227F4A /* libMoofKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMoofKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		19DA85EB16F373B800227F4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		19DA85EF16F373B800227F4A /* MoofKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoofKit-Prefix.pch"; sourceTree = "<group>"; };
+		19DA85FA16F3770900227F4A /* MOOFDialogContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOOFDialogContainerView.h; sourceTree = "<group>"; };
+		19DA85FB16F3770900227F4A /* MOOFDialogContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOOFDialogContainerView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1938276716F3A625007D7F7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1938276C16F3A625007D7F7F /* UIKit.framework in Frameworks */,
+				1938276D16F3A625007D7F7F /* Foundation.framework in Frameworks */,
+				1938276F16F3A625007D7F7F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DA85E516F373B800227F4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19DA85EC16F373B800227F4A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1938277016F3A625007D7F7F /* MoofDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1938277916F3A625007D7F7F /* DCDAppDelegate.h */,
+				1938277A16F3A625007D7F7F /* DCDAppDelegate.m */,
+				1938278216F3A625007D7F7F /* DCDViewController.h */,
+				1938278316F3A625007D7F7F /* DCDViewController.m */,
+				1938278516F3A625007D7F7F /* DCDViewController.xib */,
+				1938277116F3A625007D7F7F /* Supporting Files */,
+			);
+			path = MoofDemo;
+			sourceTree = "<group>";
+		};
+		1938277116F3A625007D7F7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1938277216F3A625007D7F7F /* MoofDemo-Info.plist */,
+				1938277316F3A625007D7F7F /* InfoPlist.strings */,
+				1938277616F3A625007D7F7F /* main.m */,
+				1938277816F3A625007D7F7F /* MoofDemo-Prefix.pch */,
+				1938277C16F3A625007D7F7F /* Default.png */,
+				1938277E16F3A625007D7F7F /* Default@2x.png */,
+				1938278016F3A625007D7F7F /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19DA85DF16F373B800227F4A = {
+			isa = PBXGroup;
+			children = (
+				19DA85F916F376C500227F4A /* MoofKit */,
+				19DA85EE16F373B800227F4A /* Supporting Files */,
+				1938277016F3A625007D7F7F /* MoofDemo */,
+				19DA85EA16F373B800227F4A /* Frameworks */,
+				19DA85E916F373B800227F4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19DA85E916F373B800227F4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19DA85E816F373B800227F4A /* libMoofKit.a */,
+				1938276A16F3A625007D7F7F /* MoofDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19DA85EA16F373B800227F4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19DA85EB16F373B800227F4A /* Foundation.framework */,
+				1938276B16F3A625007D7F7F /* UIKit.framework */,
+				1938276E16F3A625007D7F7F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19DA85EE16F373B800227F4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19DA85EF16F373B800227F4A /* MoofKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = MoofKit;
+			sourceTree = "<group>";
+		};
+		19DA85F916F376C500227F4A /* MoofKit */ = {
+			isa = PBXGroup;
+			children = (
+				19DA85FA16F3770900227F4A /* MOOFDialogContainerView.h */,
+				19DA85FB16F3770900227F4A /* MOOFDialogContainerView.m */,
+			);
+			name = MoofKit;
+			path = ../MoofKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1938276916F3A625007D7F7F /* MoofDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1938278816F3A625007D7F7F /* Build configuration list for PBXNativeTarget "MoofDemo" */;
+			buildPhases = (
+				1938276616F3A625007D7F7F /* Sources */,
+				1938276716F3A625007D7F7F /* Frameworks */,
+				1938276816F3A625007D7F7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoofDemo;
+			productName = MoofDemo;
+			productReference = 1938276A16F3A625007D7F7F /* MoofDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19DA85E716F373B800227F4A /* MoofKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19DA85F616F373B800227F4A /* Build configuration list for PBXNativeTarget "MoofKit" */;
+			buildPhases = (
+				19DA85E416F373B800227F4A /* Sources */,
+				19DA85E516F373B800227F4A /* Frameworks */,
+				19DA85E616F373B800227F4A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoofKit;
+			productName = MoofKit;
+			productReference = 19DA85E816F373B800227F4A /* libMoofKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19DA85E016F373B800227F4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "digital-worlds";
+			};
+			buildConfigurationList = 19DA85E316F373B800227F4A /* Build configuration list for PBXProject "MoofKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 19DA85DF16F373B800227F4A;
+			productRefGroup = 19DA85E916F373B800227F4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19DA85E716F373B800227F4A /* MoofKit */,
+				1938276916F3A625007D7F7F /* MoofDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1938276816F3A625007D7F7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1938277516F3A625007D7F7F /* InfoPlist.strings in Resources */,
+				1938277D16F3A625007D7F7F /* Default.png in Resources */,
+				1938277F16F3A625007D7F7F /* Default@2x.png in Resources */,
+				1938278116F3A625007D7F7F /* Default-568h@2x.png in Resources */,
+				1938278716F3A625007D7F7F /* DCDViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1938276616F3A625007D7F7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1938277716F3A625007D7F7F /* main.m in Sources */,
+				1938277B16F3A625007D7F7F /* DCDAppDelegate.m in Sources */,
+				1938278416F3A625007D7F7F /* DCDViewController.m in Sources */,
+				1938278D16F3A7AF007D7F7F /* MOOFDialogContainerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DA85E416F373B800227F4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19DA85FC16F3770900227F4A /* MOOFDialogContainerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1938277316F3A625007D7F7F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1938277416F3A625007D7F7F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1938278516F3A625007D7F7F /* DCDViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1938278616F3A625007D7F7F /* en */,
+			);
+			name = DCDViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1938278916F3A625007D7F7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MoofDemo/MoofDemo-Prefix.pch";
+				INFOPLIST_FILE = "MoofDemo/MoofDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1938278A16F3A625007D7F7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MoofDemo/MoofDemo-Prefix.pch";
+				INFOPLIST_FILE = "MoofDemo/MoofDemo-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		19DA85F416F373B800227F4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		19DA85F516F373B800227F4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19DA85F716F373B800227F4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MoofKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MoofKit/MoofKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		19DA85F816F373B800227F4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MoofKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MoofKit/MoofKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1938278816F3A625007D7F7F /* Build configuration list for PBXNativeTarget "MoofDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1938278916F3A625007D7F7F /* Debug */,
+				1938278A16F3A625007D7F7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		19DA85E316F373B800227F4A /* Build configuration list for PBXProject "MoofKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19DA85F416F373B800227F4A /* Debug */,
+				19DA85F516F373B800227F4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19DA85F616F373B800227F4A /* Build configuration list for PBXNativeTarget "MoofKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19DA85F716F373B800227F4A /* Debug */,
+				19DA85F816F373B800227F4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19DA85E016F373B800227F4A /* Project object */;
+}
