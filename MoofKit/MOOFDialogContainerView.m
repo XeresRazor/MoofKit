@@ -70,7 +70,7 @@ static UIImage *_frameImage = nil;
 -(UIImage *)frameImage {
 	if (_frameImage == nil) {
 		// Generate the frame image
-		CGRect frameRect = CGRectMake(0.0, 0.0, kDialogImageWidth + 2.0, kDialogImageHeight + 2.0);
+		CGRect frameRect = CGRectMake(0.0, 0.0, kDialogImageWidth + 1.0, kDialogImageHeight + 1.0);
 		UIGraphicsBeginImageContextWithOptions(frameRect.size, NO, 0.0);
 		// Draw the 2 border lines
 		UIBezierPath *outerPath = [UIBezierPath bezierPathWithRect:CGRectInset(frameRect, 2.0, 2.0)];
@@ -91,7 +91,7 @@ static UIImage *_frameImage = nil;
 
 -(void)layoutSubviews {
 	[super layoutSubviews];
-	self.backgroundImageView.frame = self.bounds;
+	
 }
 
 @end
