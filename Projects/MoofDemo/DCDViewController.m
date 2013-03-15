@@ -8,6 +8,7 @@
 
 #import "DCDViewController.h"
 #import "../../MoofKit/MOOFDialogContainerView.h"
+#import "../../MoofKit/MOOFImageProvider.h"
 
 @interface DCDViewController ()
 @property (nonatomic, strong) MOOFDialogContainerView *dialog;
@@ -21,6 +22,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
 	self.dialog = [[MOOFDialogContainerView alloc] initWithFrame:CGRectInset(self.view.bounds, 16.0, 16.0)];
 	[self.view addSubview:self.dialog];
+	[self.view setBackgroundColor:[MOOFImageProvider greyBackgroundPatternColor]];
 	[self animateSubview];
 }
 

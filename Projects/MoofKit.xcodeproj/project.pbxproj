@@ -19,6 +19,8 @@
 		1938278416F3A625007D7F7F /* DCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1938278316F3A625007D7F7F /* DCDViewController.m */; };
 		1938278716F3A625007D7F7F /* DCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1938278516F3A625007D7F7F /* DCDViewController.xib */; };
 		1938278D16F3A7AF007D7F7F /* MOOFDialogContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DA85FB16F3770900227F4A /* MOOFDialogContainerView.m */; };
+		1938279016F3AD23007D7F7F /* MOOFImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1938278F16F3AD23007D7F7F /* MOOFImageProvider.m */; };
+		1938279116F3B110007D7F7F /* MOOFImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1938278F16F3AD23007D7F7F /* MOOFImageProvider.m */; };
 		19DA85EC16F373B800227F4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DA85EB16F373B800227F4A /* Foundation.framework */; };
 		19DA85FC16F3770900227F4A /* MOOFDialogContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DA85FB16F3770900227F4A /* MOOFDialogContainerView.m */; };
 /* End PBXBuildFile section */
@@ -51,6 +53,8 @@
 		1938278216F3A625007D7F7F /* DCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCDViewController.h; sourceTree = "<group>"; };
 		1938278316F3A625007D7F7F /* DCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCDViewController.m; sourceTree = "<group>"; };
 		1938278616F3A625007D7F7F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DCDViewController.xib; sourceTree = "<group>"; };
+		1938278E16F3AD23007D7F7F /* MOOFImageProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOOFImageProvider.h; sourceTree = "<group>"; };
+		1938278F16F3AD23007D7F7F /* MOOFImageProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOOFImageProvider.m; sourceTree = "<group>"; };
 		19DA85E816F373B800227F4A /* libMoofKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMoofKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		19DA85EB16F373B800227F4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		19DA85EF16F373B800227F4A /* MoofKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoofKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 			children = (
 				19DA85FA16F3770900227F4A /* MOOFDialogContainerView.h */,
 				19DA85FB16F3770900227F4A /* MOOFDialogContainerView.m */,
+				1938278E16F3AD23007D7F7F /* MOOFImageProvider.h */,
+				1938278F16F3AD23007D7F7F /* MOOFImageProvider.m */,
 			);
 			name = MoofKit;
 			path = ../MoofKit;
@@ -244,6 +250,7 @@
 				1938277B16F3A625007D7F7F /* DCDAppDelegate.m in Sources */,
 				1938278416F3A625007D7F7F /* DCDViewController.m in Sources */,
 				1938278D16F3A7AF007D7F7F /* MOOFDialogContainerView.m in Sources */,
+				1938279116F3B110007D7F7F /* MOOFImageProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19DA85FC16F3770900227F4A /* MOOFDialogContainerView.m in Sources */,
+				1938279016F3AD23007D7F7F /* MOOFImageProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

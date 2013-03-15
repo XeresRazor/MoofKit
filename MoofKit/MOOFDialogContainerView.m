@@ -7,20 +7,13 @@
 //
 
 #import "MOOFDialogContainerView.h"
+#import "MOOFImageProvider.h"
 
 @interface MOOFDialogContainerView ()
-@property (nonatomic, readonly) UIImage *frameImage; // This holds a resizeable image that we use to draw the view border, it's generated dynamically the first time we need it
+//@property (nonatomic, readonly) UIImage *frameImage; // This holds a resizeable image that we use to draw the view border, it's generated dynamically the first time we need it
 @property (nonatomic, strong) UIImageView *backgroundImageView;
 @end
 
-#pragma mark - Display Constants -
-
-#define kDialogBorderTopWidth 8.0
-#define kDialogBorderBottomWidth 8.0
-#define kDialogBorderLeftWidth 8.0
-#define kDialogBorderRightWidth 8.0
-#define kDialogImageWidth 16.0
-#define kDialogImageHeight 16.0
 
 
 #pragma mark - Implementation -
@@ -33,7 +26,7 @@
     if (self) {
 		[self calculateContentSize];
 		self.backgroundImageView = [[UIImageView alloc] initWithFrame:self.bounds];
-		self.backgroundImageView.image = self.frameImage;
+		self.backgroundImageView.image = [MOOFImageProvider resizeableDialogBorderImage];//self.frameImage;
 		self.backgroundImageView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
 		[self addSubview:self.backgroundImageView];
     }
@@ -66,7 +59,7 @@
 	[self setNeedsLayout];
 }
 
-static UIImage *_frameImage = nil;
+/*static UIImage *_frameImage = nil;
 -(UIImage *)frameImage {
 	if (_frameImage == nil) {
 		// Generate the frame image
@@ -87,7 +80,7 @@ static UIImage *_frameImage = nil;
 		_frameImage = [_frameImage resizableImageWithCapInsets:UIEdgeInsetsMake(kDialogBorderTopWidth, kDialogBorderLeftWidth, kDialogBorderBottomWidth, kDialogBorderRightWidth)];
 	}
 	return _frameImage;
-}
+}*/
 
 -(void)layoutSubviews {
 	[super layoutSubviews];
