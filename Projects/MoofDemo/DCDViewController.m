@@ -19,7 +19,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 	self.dialog = [[MOOFDialogContainerView alloc] initWithFrame:CGRectInset(self.view.bounds, 16.0, 16.0)];
 	[self.view addSubview:self.dialog];
 	[self.view setBackgroundColor:[MOOFImageProvider greyBackgroundPatternColor]];
@@ -28,6 +27,13 @@
 	clarusView.frame = CGRectMake(8.0, 8.0, clarusImage.size.width, clarusImage.size.height);
 	clarusView.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
 	[self.dialog.contentView addSubview:clarusView];
+	UILabel *clarusLabel = [[UILabel alloc] initWithFrame:CGRectMake(8.0, 16.0 + clarusImage.size.height, 96.0, 96.0)];
+	clarusLabel.numberOfLines = 0;
+	clarusLabel.lineBreakMode = NSLineBreakByWordWrapping;
+	clarusLabel.text = @"Clarus says\n\"Moof!\"";
+	[clarusLabel setFont:[UIFont fontWithName:@"Chicago" size:22.0]];
+	clarusLabel.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+	[self.dialog.contentView addSubview:clarusLabel];
 	[self animateSubview];
 }
 

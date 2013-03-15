@@ -21,6 +21,7 @@
 		1938278D16F3A7AF007D7F7F /* MOOFDialogContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DA85FB16F3770900227F4A /* MOOFDialogContainerView.m */; };
 		1938279016F3AD23007D7F7F /* MOOFImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1938278F16F3AD23007D7F7F /* MOOFImageProvider.m */; };
 		1938279116F3B110007D7F7F /* MOOFImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1938278F16F3AD23007D7F7F /* MOOFImageProvider.m */; };
+		1938279516F3CC9D007D7F7F /* chicago.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1938279416F3CC9D007D7F7F /* chicago.ttf */; };
 		19DA85EC16F373B800227F4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DA85EB16F373B800227F4A /* Foundation.framework */; };
 		19DA85FC16F3770900227F4A /* MOOFDialogContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DA85FB16F3770900227F4A /* MOOFDialogContainerView.m */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		1938278616F3A625007D7F7F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DCDViewController.xib; sourceTree = "<group>"; };
 		1938278E16F3AD23007D7F7F /* MOOFImageProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOOFImageProvider.h; sourceTree = "<group>"; };
 		1938278F16F3AD23007D7F7F /* MOOFImageProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOOFImageProvider.m; sourceTree = "<group>"; };
+		1938279416F3CC9D007D7F7F /* chicago.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = chicago.ttf; sourceTree = "<group>"; };
 		19DA85E816F373B800227F4A /* libMoofKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMoofKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		19DA85EB16F373B800227F4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		19DA85EF16F373B800227F4A /* MoofKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoofKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -94,7 +96,8 @@
 				1938278516F3A625007D7F7F /* DCDViewController.xib */,
 				1938277116F3A625007D7F7F /* Supporting Files */,
 			);
-			path = MoofDemo;
+			name = MoofDemo;
+			path = Projects/MoofDemo;
 			sourceTree = "<group>";
 		};
 		1938277116F3A625007D7F7F /* Supporting Files */ = {
@@ -115,7 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				19DA85F916F376C500227F4A /* MoofKit */,
-				19DA85EE16F373B800227F4A /* Supporting Files */,
 				1938277016F3A625007D7F7F /* MoofDemo */,
 				19DA85EA16F373B800227F4A /* Frameworks */,
 				19DA85E916F373B800227F4A /* Products */,
@@ -147,19 +149,20 @@
 				19DA85EF16F373B800227F4A /* MoofKit-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			path = MoofKit;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		19DA85F916F376C500227F4A /* MoofKit */ = {
 			isa = PBXGroup;
 			children = (
+				1938279416F3CC9D007D7F7F /* chicago.ttf */,
 				19DA85FA16F3770900227F4A /* MOOFDialogContainerView.h */,
 				19DA85FB16F3770900227F4A /* MOOFDialogContainerView.m */,
 				1938278E16F3AD23007D7F7F /* MOOFImageProvider.h */,
 				1938278F16F3AD23007D7F7F /* MOOFImageProvider.m */,
+				19DA85EE16F373B800227F4A /* Supporting Files */,
 			);
-			name = MoofKit;
-			path = ../MoofKit;
+			path = MoofKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +239,7 @@
 				1938277F16F3A625007D7F7F /* Default@2x.png in Resources */,
 				1938278116F3A625007D7F7F /* Default-568h@2x.png in Resources */,
 				1938278716F3A625007D7F7F /* DCDViewController.xib in Resources */,
+				1938279516F3CC9D007D7F7F /* chicago.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,8 +294,8 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MoofDemo/MoofDemo-Prefix.pch";
-				INFOPLIST_FILE = "MoofDemo/MoofDemo-Info.plist";
+				GCC_PREFIX_HEADER = "Projects/MoofDemo/MoofDemo-Prefix.pch";
+				INFOPLIST_FILE = "Projects/MoofDemo/MoofDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -302,8 +306,8 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MoofDemo/MoofDemo-Prefix.pch";
-				INFOPLIST_FILE = "MoofDemo/MoofDemo-Info.plist";
+				GCC_PREFIX_HEADER = "Projects/MoofDemo/MoofDemo-Prefix.pch";
+				INFOPLIST_FILE = "Projects/MoofDemo/MoofDemo-Info.plist";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -313,7 +317,7 @@
 		19DA85F416F373B800227F4A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -343,7 +347,7 @@
 		19DA85F516F373B800227F4A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -397,6 +401,7 @@
 				1938278A16F3A625007D7F7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19DA85E316F373B800227F4A /* Build configuration list for PBXProject "MoofKit" */ = {
 			isa = XCConfigurationList;
